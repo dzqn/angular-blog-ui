@@ -1,0 +1,9 @@
+.list-group li a {
+    color:#fff;
+    text-decoration: none;
+}
+
+.list-group li a:hover {
+    color: #0064c4;
+}
+
