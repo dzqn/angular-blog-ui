@@ -5,12 +5,16 @@ import {AboutComponent} from './ui/page/about/about.component';
 import {MainlayoutComponent} from './ui/component/mainlayout/mainlayout.component';
 import {AdminlayoutComponent} from './admin/component/adminlayout/adminlayout.component';
 import {AdminhomeComponent} from './admin/page/adminhome/adminhome.component';
+import {CategoryComponent} from './admin/page/category/category.component';
 
 
 
 const routes: Routes = [
   {
-    path: "", redirectTo: "/ui", pathMatch: "full"
+    path: "", redirectTo: "/ui/home", pathMatch: "full"
+  },
+  {
+    path: "ui", redirectTo: "ui/home", pathMatch: "full"
   },
   {
     path: "ui", component: MainlayoutComponent, children: [
@@ -19,8 +23,12 @@ const routes: Routes = [
     ]
   },
   {
+    path: "admin", redirectTo: "admin/home", pathMatch: "full"
+  },
+  {
     path: "admin", component: AdminlayoutComponent, children: [
       { path: "home", component: AdminhomeComponent },
+      { path: "category", component: CategoryComponent }
     ]
   }
 ];

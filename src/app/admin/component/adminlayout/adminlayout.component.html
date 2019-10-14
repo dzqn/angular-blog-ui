@@ -1,14 +1,29 @@
 <div class="container justify-content-around">
-    <div class="row mt-3">
-      <div class="col-md-4">
-        <div class="col-md-12 mb-3">
-          left Menu
-        </div>
-      </div>
-      <div class="col-md-8">
-        <div class="col-md-12">
-          <router-outlet></router-outlet>
+  <div class="row mt-3">
+    <div class="col-md-4">
+      <div class="col-md-12 mb-3">
+        <div class="bg-secondary rounded">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-secondary">
+              <a  href="/admin/home" class="redMenuItem"> Anasayfa</a>
+              <span class="badge badge-primary badge-pill"></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-secondary">
+              <a href="/admin/category" class="redMenuItem"> Kategoriler (Categories)</a>
+              <span class="badge badge-primary badge-pill"></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-secondary">
+              <a href="#" class="redMenuItem"> Makaleler (Posts)</a>
+              <span class="badge badge-primary badge-pill"></span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+    <div class="col-md-8">
+      <div class="col-md-12">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
   </div>
+</div>

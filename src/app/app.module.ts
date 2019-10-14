@@ -13,6 +13,7 @@ import { CagetorylistComponent } from './ui/component/cagetorylist/cagetorylist.
 import { MainlayoutComponent } from './ui/component/mainlayout/mainlayout.component';
 import { AdminlayoutComponent } from './admin/component/adminlayout/adminlayout.component';
 import { AdminhomeComponent } from './admin/page/adminhome/adminhome.component';
+import { CategoryComponent } from './admin/page/category/category.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { AdminhomeComponent } from './admin/page/adminhome/adminhome.component';
     CagetorylistComponent,
     MainlayoutComponent,
     AdminlayoutComponent,
-    AdminhomeComponent
+    AdminhomeComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
