@@ -6,6 +6,7 @@ import {MainlayoutComponent} from './ui/component/mainlayout/mainlayout.componen
 import {AdminlayoutComponent} from './admin/component/adminlayout/adminlayout.component';
 import {AdminhomeComponent} from './admin/page/adminhome/adminhome.component';
 import {CategoryComponent} from './admin/page/category/category.component';
+import {PostComponent} from './admin/page/post/post.component';
 
 
 
@@ -14,7 +15,7 @@ const routes: Routes = [
     path: "", redirectTo: "/ui/home", pathMatch: "full"
   },
   {
-    path: "ui", redirectTo: "ui/home", pathMatch: "full"
+    path: "ui", redirectTo: "/ui/home", pathMatch: "full"
   },
   {
     path: "ui", component: MainlayoutComponent, children: [
@@ -23,12 +24,13 @@ const routes: Routes = [
     ]
   },
   {
-    path: "admin", redirectTo: "admin/home", pathMatch: "full"
+    path: "admin", redirectTo: "/admin/home", pathMatch: "full"
   },
   {
     path: "admin", component: AdminlayoutComponent, children: [
       { path: "home", component: AdminhomeComponent },
-      { path: "category", component: CategoryComponent }
+      { path: "category", component: CategoryComponent },
+      { path: "post", component: PostComponent }
     ]
   }
 ];
