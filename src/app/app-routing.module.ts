@@ -30,6 +30,8 @@ const routes: Routes = [
     path: "admin", component: AdminlayoutComponent, children: [
       { path: "home", component: AdminhomeComponent },
       { path: "category", component: CategoryComponent },
+      { path: "category/add", component: CategoryAddComponent },
+      { path: "category/list", component: CategoryListComponent },
       { path: "post", component: PostComponent }
     ]
   }
