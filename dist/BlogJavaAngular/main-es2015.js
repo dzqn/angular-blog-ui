@@ -23,16 +23,29 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/adminlayout/adminlayout.component.html":
-/*!****************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/admin/adminlayout/adminlayout.component.html ***!
-  \****************************************************************************************************/
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/component/adminlayout/adminlayout.component.html":
+/*!**************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/admin/component/adminlayout/adminlayout.component.html ***!
+  \**************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>Admin Layout</p>\n<router-outlet></router-outlet>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container justify-content-around\">\n  <div class=\"row mt-3\">\n    <div class=\"col-md-4\">\n      <div class=\"col-md-12\">\n        <div class=\"bg-secondary rounded\">\n          <ul class=\"navbar-nav\">\n            <li class=\"nav-item\">\n              <a routerLink=\"home\" class=\"btn btn-danger col-md-12\" role=\"button\" routerLinkActive=\"active\">\n                Anasayfa</a>\n            </li>\n            <li class=\"nav-item\">\n              <a routerLink=\"category\" class=\"btn btn-danger col-md-12\" role=\"button\"\n                routerLinkActive=\"active\"> Kategoriler (Categories)</a>\n            </li>\n            <li class=\"nav-item\">\n              <a routerLink=\"post\" class=\"btn btn-danger col-md-12\" role=\"button\" routerLinkActive=\"active\">\n                Makaleler (Posts)</a>\n            </li>\n          </ul>\n        </div>\n      </div>\n    </div>\n    <div class=\"col-md-8\">\n      <div class=\"col-md-12\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n  </div>\n</div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/page/admincategory/admincategory.component.html":
+/*!*************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/admin/page/admincategory/admincategory.component.html ***!
+  \*************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"bg-secondary rounded\">\n<div class=\"panel panel-default\">\n    <!-- <div class=\"panel-heading\">Create Category</div> -->\n    <div class=\"panel-body\">\n        <form>\n            <div class=\"form-group row\">\n                <label for=\"CategoryName\" class=\"col-md-2 col-form-label\">Name</label>\n                <div class=\"col-md-10\">\n                    <input type=\"email\" class=\"form-control\" id=\"CategoryName\" placeholder=\"name\">\n                </div>\n            </div>\n            <div class=\"form-group row\">\n                <div class=\"col-md-10 offset-md-2\">\n                    <button type=\"button\" class=\"btn btn-primary\">Ekle</button>\n                </div>\n            </div>\n        </form>\n    </div>\n</div>\n\n<div class=\"panel panel-default\">\n    <!-- <div class=\"panel-heading\">Category List</div> -->\n    <div class=\"panel-body\">\n        <table class=\"table table-dark\">\n            <thead>\n                <tr>\n                    <th>#</th>\n                    <th>Name</th>\n                </tr>\n            </thead>\n            <tbody>\n                <tr>\n                    <th scope=\"row\">1</th>\n                    <td>C Sharp</td>\n                </tr>\n                \n            </tbody>\n        </table>\n    </div>\n</div>\n    </div>\n");
 
 /***/ }),
 
@@ -45,7 +58,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>adminhome works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"bg-secondary rounded\">\n  <nav class=\"navbar navbar-expand-sm\">\n    <!-- Links -->\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a routerLink=\"employees\" class=\"btn btn-primary active\" role=\"button\" routerLinkActive=\"active\">Employees</a>\n      </li>\n      <li class=\"nav-item\" style=\"margin-left: 10px;\">\n        <a routerLink=\"add\" class=\"btn btn-primary active\" role=\"button\" routerLinkActive=\"active\">Add</a>\n      </li>\n    </ul>\n\n  </nav>\n\n  <router-outlet></router-outlet>>\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/page/post/post.component.html":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/admin/page/post/post.component.html ***!
+  \*******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"bg-secondary rounded\">\n  <p>post works!</p>\n</div>\n");
 
 /***/ }),
 
@@ -75,6 +101,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/ui/component/card/card.component.html":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/ui/component/card/card.component.html ***!
+  \*********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"bg-secondary rounded text-center pt-3\">\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <a href=\"#\"><img class=\"img-fluid rounded-circle\"\n          src=\"https://media.licdn.com/dms/image/C5103AQFWbSPUOQOuWA/profile-displayphoto-shrink_200_200/0?e=1574294400&v=beta&t=9biO4LPLzrk9Tm0INwarhVezLeAGOV_N7tTF44Mi9QM\"\n          alt=\"\"></a>\n    </div>\n    <div class=\"col-md-12 mt-3\">\n      <h3>Düzgün Tutar</h3>\n      <h6>Bilgisayar Mühendisi</h6>\n      <p>{{ '[' }} {{ '{' }} Java {{ '}' }},{{ '{' }} C # {{ '}' }},\n        {{ '{' }} Python {{ '}' }},{{ '{' }} Node.js {{ '}' }},{{ '{' }} Angular {{ '}' }},{{ '{' }} React {{ '}]' }}\n      </p>\n    </div>\n  </div>\n</div>");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/ui/component/mainlayout/mainlayout.component.html":
 /*!*********************************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/ui/component/mainlayout/mainlayout.component.html ***!
@@ -85,19 +124,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container justify-content-around\">\n    <div class=\"row mt-3\">\n      <div class=\"col-md-4\">\n        <div class=\"col-md-12 mb-3\">\n          <app-menu></app-menu>\n        </div>\n        <div class=\"col-md-12 mb-3\">\n          <app-search></app-search>\n        </div>\n        <div class=\"col-md-12 mb-3\">\n          <app-cagetorylist></app-cagetorylist>\n        </div>\n      </div>\n      <div class=\"col-md-8\">\n        <div class=\"col-md-12\">\n          <router-outlet></router-outlet>\n        </div>\n      </div>\n    </div>\n  </div>\n");
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/ui/component/menu/menu.component.html":
-/*!*********************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/ui/component/menu/menu.component.html ***!
-  \*********************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"bg-secondary rounded text-center pt-3\">\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <a href=\"#\"><img class=\"img-fluid rounded-circle\"\n          src=\"https://media.licdn.com/dms/image/C5103AQFWbSPUOQOuWA/profile-displayphoto-shrink_200_200/0?e=1574294400&v=beta&t=9biO4LPLzrk9Tm0INwarhVezLeAGOV_N7tTF44Mi9QM\"\n          alt=\"\"></a>\n    </div>\n    <div class=\"col-md-12 mt-3\">\n      <h3>Düzgün Tutar</h3>\n      <h6>Bilgisayar Mühendisi</h6>\n      <p>{{ '[' }} {{ '{' }} Java {{ '}' }},{{ '{' }} C # {{ '}' }},\n        {{ '{' }} Python {{ '}' }},{{ '{' }} Node.js {{ '}' }},{{ '{' }} Angular {{ '}' }},{{ '{' }} React {{ '}]' }}\n      </p>\n    </div>\n  </div>\n</div>");
 
 /***/ }),
 
@@ -382,23 +408,23 @@ function __importDefault(mod) {
 
 /***/ }),
 
-/***/ "./src/app/admin/adminlayout/adminlayout.component.css":
-/*!*************************************************************!*\
-  !*** ./src/app/admin/adminlayout/adminlayout.component.css ***!
-  \*************************************************************/
+/***/ "./src/app/admin/component/adminlayout/adminlayout.component.css":
+/*!***********************************************************************!*\
+  !*** ./src/app/admin/component/adminlayout/adminlayout.component.css ***!
+  \***********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2FkbWlubGF5b3V0L2FkbWlubGF5b3V0LmNvbXBvbmVudC5jc3MifQ== */");
+/* harmony default export */ __webpack_exports__["default"] = (".redMenuItem{\n    color:gold;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4vY29tcG9uZW50L2FkbWlubGF5b3V0L2FkbWlubGF5b3V0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxVQUFVO0FBQ2QiLCJmaWxlIjoic3JjL2FwcC9hZG1pbi9jb21wb25lbnQvYWRtaW5sYXlvdXQvYWRtaW5sYXlvdXQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5yZWRNZW51SXRlbXtcbiAgICBjb2xvcjpnb2xkO1xufSJdfQ== */");
 
 /***/ }),
 
-/***/ "./src/app/admin/adminlayout/adminlayout.component.ts":
-/*!************************************************************!*\
-  !*** ./src/app/admin/adminlayout/adminlayout.component.ts ***!
-  \************************************************************/
+/***/ "./src/app/admin/component/adminlayout/adminlayout.component.ts":
+/*!**********************************************************************!*\
+  !*** ./src/app/admin/component/adminlayout/adminlayout.component.ts ***!
+  \**********************************************************************/
 /*! exports provided: AdminlayoutComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -417,10 +443,54 @@ let AdminlayoutComponent = class AdminlayoutComponent {
 AdminlayoutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-adminlayout',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./adminlayout.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/adminlayout/adminlayout.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./adminlayout.component.css */ "./src/app/admin/adminlayout/adminlayout.component.css")).default]
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./adminlayout.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/component/adminlayout/adminlayout.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./adminlayout.component.css */ "./src/app/admin/component/adminlayout/adminlayout.component.css")).default]
     })
 ], AdminlayoutComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/admin/page/admincategory/admincategory.component.css":
+/*!**********************************************************************!*\
+  !*** ./src/app/admin/page/admincategory/admincategory.component.css ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL3BhZ2UvYWRtaW5jYXRlZ29yeS9hZG1pbmNhdGVnb3J5LmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/admin/page/admincategory/admincategory.component.ts":
+/*!*********************************************************************!*\
+  !*** ./src/app/admin/page/admincategory/admincategory.component.ts ***!
+  \*********************************************************************/
+/*! exports provided: AdminCategoryComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminCategoryComponent", function() { return AdminCategoryComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let AdminCategoryComponent = class AdminCategoryComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+AdminCategoryComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-admincategory',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./admincategory.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/page/admincategory/admincategory.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./admincategory.component.css */ "./src/app/admin/page/admincategory/admincategory.component.css")).default]
+    })
+], AdminCategoryComponent);
 
 
 
@@ -443,28 +513,72 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************************************************!*\
   !*** ./src/app/admin/page/adminhome/adminhome.component.ts ***!
   \*************************************************************/
-/*! exports provided: AdminhomeComponent */
+/*! exports provided: AdminHomeComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminhomeComponent", function() { return AdminhomeComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminHomeComponent", function() { return AdminHomeComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-let AdminhomeComponent = class AdminhomeComponent {
+let AdminHomeComponent = class AdminHomeComponent {
     constructor() { }
     ngOnInit() {
     }
 };
-AdminhomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+AdminHomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-adminhome',
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./adminhome.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/page/adminhome/adminhome.component.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./adminhome.component.css */ "./src/app/admin/page/adminhome/adminhome.component.css")).default]
     })
-], AdminhomeComponent);
+], AdminHomeComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/admin/page/post/post.component.css":
+/*!****************************************************!*\
+  !*** ./src/app/admin/page/post/post.component.css ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL3BhZ2UvcG9zdC9wb3N0LmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/admin/page/post/post.component.ts":
+/*!***************************************************!*\
+  !*** ./src/app/admin/page/post/post.component.ts ***!
+  \***************************************************/
+/*! exports provided: PostComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostComponent", function() { return PostComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let PostComponent = class PostComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+PostComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-post',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./post.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/page/post/post.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./post.component.css */ "./src/app/admin/page/post/post.component.css")).default]
+    })
+], PostComponent);
 
 
 
@@ -486,8 +600,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_page_home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ui/page/home/home.component */ "./src/app/ui/page/home/home.component.ts");
 /* harmony import */ var _ui_page_about_about_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ui/page/about/about.component */ "./src/app/ui/page/about/about.component.ts");
 /* harmony import */ var _ui_component_mainlayout_mainlayout_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ui/component/mainlayout/mainlayout.component */ "./src/app/ui/component/mainlayout/mainlayout.component.ts");
-/* harmony import */ var _admin_adminlayout_adminlayout_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./admin/adminlayout/adminlayout.component */ "./src/app/admin/adminlayout/adminlayout.component.ts");
+/* harmony import */ var _admin_component_adminlayout_adminlayout_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./admin/component/adminlayout/adminlayout.component */ "./src/app/admin/component/adminlayout/adminlayout.component.ts");
 /* harmony import */ var _admin_page_adminhome_adminhome_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./admin/page/adminhome/adminhome.component */ "./src/app/admin/page/adminhome/adminhome.component.ts");
+/* harmony import */ var _admin_page_admincategory_admincategory_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./admin/page/admincategory/admincategory.component */ "./src/app/admin/page/admincategory/admincategory.component.ts");
+/* harmony import */ var _admin_page_post_post_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./admin/page/post/post.component */ "./src/app/admin/page/post/post.component.ts");
+
+
 
 
 
@@ -498,7 +616,10 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [
     {
-        path: "", redirectTo: "/ui", pathMatch: "full"
+        path: "", redirectTo: "/ui/home", pathMatch: "full"
+    },
+    {
+        path: "ui", redirectTo: "/ui/home", pathMatch: "full"
     },
     {
         path: "ui", component: _ui_component_mainlayout_mainlayout_component__WEBPACK_IMPORTED_MODULE_5__["MainlayoutComponent"], children: [
@@ -507,8 +628,21 @@ const routes = [
         ]
     },
     {
-        path: "web", component: _admin_adminlayout_adminlayout_component__WEBPACK_IMPORTED_MODULE_6__["AdminlayoutComponent"], children: [
-            { path: "example3", component: _admin_page_adminhome_adminhome_component__WEBPACK_IMPORTED_MODULE_7__["AdminhomeComponent"] },
+        path: "admin", redirectTo: "/admin/home", pathMatch: "full"
+    },
+    {
+        path: "admin", component: _admin_component_adminlayout_adminlayout_component__WEBPACK_IMPORTED_MODULE_6__["AdminlayoutComponent"], children: [
+            {
+                path: "home", component: _admin_page_adminhome_adminhome_component__WEBPACK_IMPORTED_MODULE_7__["AdminHomeComponent"], children: [{
+                        path: "post", component: _admin_page_post_post_component__WEBPACK_IMPORTED_MODULE_9__["PostComponent"]
+                    }]
+            },
+            {
+                path: "category", component: _admin_page_admincategory_admincategory_component__WEBPACK_IMPORTED_MODULE_8__["AdminCategoryComponent"]
+            },
+            {
+                path: "post", component: _admin_page_post_post_component__WEBPACK_IMPORTED_MODULE_9__["PostComponent"]
+            }
         ]
     }
 ];
@@ -593,15 +727,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _ui_component_menu_menu_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ui/component/menu/menu.component */ "./src/app/ui/component/menu/menu.component.ts");
+/* harmony import */ var _ui_component_card_card_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ui/component/card/card.component */ "./src/app/ui/component/card/card.component.ts");
 /* harmony import */ var _ui_component_post_list_post_list_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ui/component/post-list/post-list.component */ "./src/app/ui/component/post-list/post-list.component.ts");
 /* harmony import */ var _ui_component_search_search_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ui/component/search/search.component */ "./src/app/ui/component/search/search.component.ts");
 /* harmony import */ var _ui_page_home_home_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./ui/page/home/home.component */ "./src/app/ui/page/home/home.component.ts");
 /* harmony import */ var _ui_page_about_about_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./ui/page/about/about.component */ "./src/app/ui/page/about/about.component.ts");
 /* harmony import */ var _ui_component_cagetorylist_cagetorylist_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./ui/component/cagetorylist/cagetorylist.component */ "./src/app/ui/component/cagetorylist/cagetorylist.component.ts");
 /* harmony import */ var _ui_component_mainlayout_mainlayout_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./ui/component/mainlayout/mainlayout.component */ "./src/app/ui/component/mainlayout/mainlayout.component.ts");
-/* harmony import */ var _admin_adminlayout_adminlayout_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./admin/adminlayout/adminlayout.component */ "./src/app/admin/adminlayout/adminlayout.component.ts");
+/* harmony import */ var _admin_component_adminlayout_adminlayout_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./admin/component/adminlayout/adminlayout.component */ "./src/app/admin/component/adminlayout/adminlayout.component.ts");
 /* harmony import */ var _admin_page_adminhome_adminhome_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./admin/page/adminhome/adminhome.component */ "./src/app/admin/page/adminhome/adminhome.component.ts");
+/* harmony import */ var _admin_page_admincategory_admincategory_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./admin/page/admincategory/admincategory.component */ "./src/app/admin/page/admincategory/admincategory.component.ts");
+/* harmony import */ var _admin_page_post_post_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./admin/page/post/post.component */ "./src/app/admin/page/post/post.component.ts");
+
+
 
 
 
@@ -623,15 +761,17 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
             _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
-            _ui_component_menu_menu_component__WEBPACK_IMPORTED_MODULE_6__["MenuComponent"],
+            _ui_component_card_card_component__WEBPACK_IMPORTED_MODULE_6__["CardComponent"],
             _ui_component_post_list_post_list_component__WEBPACK_IMPORTED_MODULE_7__["PostListComponent"],
             _ui_component_search_search_component__WEBPACK_IMPORTED_MODULE_8__["SearchComponent"],
             _ui_page_home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"],
             _ui_page_about_about_component__WEBPACK_IMPORTED_MODULE_10__["AboutComponent"],
             _ui_component_cagetorylist_cagetorylist_component__WEBPACK_IMPORTED_MODULE_11__["CagetorylistComponent"],
             _ui_component_mainlayout_mainlayout_component__WEBPACK_IMPORTED_MODULE_12__["MainlayoutComponent"],
-            _admin_adminlayout_adminlayout_component__WEBPACK_IMPORTED_MODULE_13__["AdminlayoutComponent"],
-            _admin_page_adminhome_adminhome_component__WEBPACK_IMPORTED_MODULE_14__["AdminhomeComponent"]
+            _admin_component_adminlayout_adminlayout_component__WEBPACK_IMPORTED_MODULE_13__["AdminlayoutComponent"],
+            _admin_page_adminhome_adminhome_component__WEBPACK_IMPORTED_MODULE_14__["AdminHomeComponent"],
+            _admin_page_admincategory_admincategory_component__WEBPACK_IMPORTED_MODULE_15__["AdminCategoryComponent"],
+            _admin_page_post_post_component__WEBPACK_IMPORTED_MODULE_16__["PostComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -742,6 +882,50 @@ CagetorylistComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/ui/component/card/card.component.css":
+/*!******************************************************!*\
+  !*** ./src/app/ui/component/card/card.component.css ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("div div a img{\n    width: 128px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdWkvY29tcG9uZW50L2NhcmQvY2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksWUFBWTtBQUNoQiIsImZpbGUiOiJzcmMvYXBwL3VpL2NvbXBvbmVudC9jYXJkL2NhcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdiBkaXYgYSBpbWd7XG4gICAgd2lkdGg6IDEyOHB4O1xufSJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/ui/component/card/card.component.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/ui/component/card/card.component.ts ***!
+  \*****************************************************/
+/*! exports provided: CardComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardComponent", function() { return CardComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let CardComponent = class CardComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+CardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-card',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./card.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/ui/component/card/card.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./card.component.css */ "./src/app/ui/component/card/card.component.css")).default]
+    })
+], CardComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/ui/component/mainlayout/mainlayout.component.css":
 /*!******************************************************************!*\
   !*** ./src/app/ui/component/mainlayout/mainlayout.component.css ***!
@@ -781,50 +965,6 @@ MainlayoutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./mainlayout.component.css */ "./src/app/ui/component/mainlayout/mainlayout.component.css")).default]
     })
 ], MainlayoutComponent);
-
-
-
-/***/ }),
-
-/***/ "./src/app/ui/component/menu/menu.component.css":
-/*!******************************************************!*\
-  !*** ./src/app/ui/component/menu/menu.component.css ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("div div a img{\n    width: 128px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdWkvY29tcG9uZW50L21lbnUvbWVudS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksWUFBWTtBQUNoQiIsImZpbGUiOiJzcmMvYXBwL3VpL2NvbXBvbmVudC9tZW51L21lbnUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdiBkaXYgYSBpbWd7XG4gICAgd2lkdGg6IDEyOHB4O1xufSJdfQ== */");
-
-/***/ }),
-
-/***/ "./src/app/ui/component/menu/menu.component.ts":
-/*!*****************************************************!*\
-  !*** ./src/app/ui/component/menu/menu.component.ts ***!
-  \*****************************************************/
-/*! exports provided: MenuComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MenuComponent", function() { return MenuComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-
-
-let MenuComponent = class MenuComponent {
-    constructor() { }
-    ngOnInit() {
-    }
-};
-MenuComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-menu',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./menu.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/ui/component/menu/menu.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./menu.component.css */ "./src/app/ui/component/menu/menu.component.css")).default]
-    })
-], MenuComponent);
 
 
 
@@ -1071,7 +1211,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/duzgun/Masaüstü/Project/Angular/blogjavaangular/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /home/duzgun/Masaüstü/Projects/Angular/angular-java-blog/src/main.ts */"./src/main.ts");
 
 
 /***/ })

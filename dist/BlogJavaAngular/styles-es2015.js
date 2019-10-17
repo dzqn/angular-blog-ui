@@ -376,8 +376,8 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/duzgun/Masaüstü/Project/Angular/blogjavaangular/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
-module.exports = __webpack_require__(/*! /home/duzgun/Masaüstü/Project/Angular/blogjavaangular/src/styles.css */"./src/styles.css");
+__webpack_require__(/*! /home/duzgun/Masaüstü/Projects/Angular/angular-java-blog/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
+module.exports = __webpack_require__(/*! /home/duzgun/Masaüstü/Projects/Angular/angular-java-blog/src/styles.css */"./src/styles.css");
 
 
 /***/ })
