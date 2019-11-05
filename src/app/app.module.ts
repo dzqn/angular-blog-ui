@@ -15,6 +15,8 @@ import { AdminLayoutComponent } from './admin/component/adminlayout/adminlayout.
 import { AdminHomeComponent } from './admin/page/adminhome/adminhome.component';
 import { AdminCategoryComponent } from './admin/page/admincategory/admincategory.component';
 import { PostComponent } from './admin/page/post/post.component';
+import { AdminCategoryListComponent } from './admin/component/admin-category-list/admin-category-list.component';
+import {AdminCategoryAddComponent} from './admin/component/admin-category-add/admin-category-add.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { PostComponent } from './admin/page/post/post.component';
     AdminLayoutComponent,
     AdminHomeComponent,
     AdminCategoryComponent,
-    PostComponent
+    PostComponent,
+    AdminCategoryListComponent,
+    AdminCategoryAddComponent
   ],
   imports: [
     BrowserModule,
