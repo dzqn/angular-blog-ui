@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +15,7 @@ import { MainlayoutComponent } from './ui/component/mainlayout/mainlayout.compon
 import { AdminLayoutComponent } from './admin/component/adminlayout/adminlayout.component';
 import { AdminHomeComponent } from './admin/page/adminhome/adminhome.component';
 import { AdminCategoryComponent } from './admin/page/admincategory/admincategory.component';
-import { PostComponent } from './admin/page/post/post.component';
+import { AdminPostComponent } from './admin/page/adminpost/adminpost.component';
 import { AdminCategoryListComponent } from './admin/component/admin-category-list/admin-category-list.component';
 import {AdminCategoryAddComponent} from './admin/component/admin-category-add/admin-category-add.component';
 
@@ -32,14 +33,15 @@ import {AdminCategoryAddComponent} from './admin/component/admin-category-add/ad
     AdminLayoutComponent,
     AdminHomeComponent,
     AdminCategoryComponent,
-    PostComponent,
+    AdminPostComponent,
     AdminCategoryListComponent,
     AdminCategoryAddComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

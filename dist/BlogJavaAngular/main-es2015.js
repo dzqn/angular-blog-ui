@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>admin-category-add works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<h5 class=\"text-center\">Category Add</h5>\n<div class=\"row\">\n    <form class=\"col-md-12\">\n        <div class=\"form-group\">\n            <label for=\"txtCategoryName\">Category Name</label>\n            <input type=\"text\" class=\"form-control\" [(ngModel)]=\"Name\" name=\"name\" id=\"txtCategoryName\">\n        </div>\n        <div class=\"form-check\">\n            <input type=\"checkbox\" class=\"form-check-input\" [(ngModel)]=\"IsActive\" name=\"isActive\" id=\"chckIsActive\">\n            <label class=\"form-check-label\" for=\"chckIsActive\">is active ?</label>\n        </div>\n        <button type=\"button\" id=\"btnCategorySave\" (click)=\"btnCategorySave_click()\"\n            class=\"btn btn-primary col-md-2\">Save</button>\n        {{Category | json}}<br>\n    </form>\n</div>\n<br><br>");
 
 /***/ }),
 
@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>admin-category-all works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<p>admin-category-list works!</p>\n");
 
 /***/ }),
 
@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"bg-secondary rounded\">\n    <nav class=\"navbar navbar-expand-sm\">\n        <ul class=\"navbar-nav\">\n            <li class=\"nav-item\">\n                <a routerLink=\"addcategory\" class=\"btn btn-primary active\" role=\"button\" routerLinkActive=\"active\">Add</a>\n            </li>\n            <li class=\"nav-item\" style=\"margin-left: 10px;\">\n                <a routerLink=\"listcategory\" class=\"btn btn-primary active\" role=\"button\" routerLinkActive=\"active\">List</a>\n            </li>\n        </ul>\n    </nav>\n    <router-outlet></router-outlet>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"bg-secondary rounded\">\n    <nav class=\"navbar navbar-expand-sm\">\n        <ul class=\"navbar-nav\">\n            <li class=\"nav-item\">\n                <a routerLink=\"addcategory\" class=\"btn btn-primary active\" role=\"button\"\n                    routerLinkActive=\"active\">Add</a>\n            </li>\n            <li class=\"nav-item\" style=\"margin-left: 10px;\">\n                <a routerLink=\"listcategory\" class=\"btn btn-primary active\" role=\"button\"\n                    routerLinkActive=\"active\">List</a>\n            </li>\n        </ul>\n    </nav>\n    <div class=\"container\">\n        <router-outlet></router-outlet>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -84,20 +84,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"bg-secondary rounded\">\n  Anasayfa-Dashboard\n  <!-- <nav class=\"navbar navbar-expand-sm\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a routerLink=\"employees\" class=\"btn btn-primary active\" role=\"button\" routerLinkActive=\"active\">Employees</a>\n      </li>\n      <li class=\"nav-item\" style=\"margin-left: 10px;\">\n        <a routerLink=\"add\" class=\"btn btn-primary active\" role=\"button\" routerLinkActive=\"active\">Add</a>\n      </li>\n    </ul>\n  </nav>\n  <router-outlet></router-outlet> -->\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"bg-secondary rounded\">\n  <div class=\"container\">\n      <p>Anasayfa-Dashboard</p>\n  </div>\n</div>");
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/page/post/post.component.html":
-/*!*******************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/admin/page/post/post.component.html ***!
-  \*******************************************************************************************/
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/page/adminpost/adminpost.component.html":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/admin/page/adminpost/adminpost.component.html ***!
+  \*****************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"bg-secondary rounded\">\n  <p>post works!</p>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"bg-secondary rounded\">\n  <div class=\"container\">\n    <p>post works!</p>\n  </div>\n</div>\n");
 
 /***/ }),
 
@@ -149,7 +149,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container justify-content-around\">\n    <div class=\"row mt-3\">\n      <div class=\"col-md-4\">\n        <div class=\"col-md-12 mb-3\">\n          <app-card></app-card>\n        </div>\n        <div class=\"col-md-12 mb-3\">\n          <app-search></app-search>\n        </div>\n        <div class=\"col-md-12 mb-3\">\n          <!-- <app-cagetorylist></app-cagetorylist> -->\n        </div>\n      </div>\n      <div class=\"col-md-8\">\n        <div class=\"col-md-12\">\n          <router-outlet></router-outlet>\n        </div>\n      </div>\n    </div>\n  </div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container justify-content-around\">\n    <div class=\"row mt-3\">\n      <div class=\"col-md-4\">\n        <div class=\"col-md-12 mb-3\">\n          <app-card></app-card>\n        </div>\n        <div class=\"col-md-12 mb-3\">\n          <app-search></app-search>\n        </div>\n        <div class=\"col-md-12 mb-3\">\n          <app-cagetorylist></app-cagetorylist>\n        </div>\n      </div>\n      <div class=\"col-md-8\">\n        <div class=\"col-md-12\">\n          <router-outlet></router-outlet>\n        </div>\n      </div>\n    </div>\n  </div>\n");
 
 /***/ }),
 
@@ -459,13 +459,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminCategoryAddComponent", function() { return AdminCategoryAddComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _service_category_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../service/category-service.service */ "./src/app/service/category-service.service.ts");
+/* harmony import */ var src_app_models_category__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/models/category */ "./src/app/models/category.ts");
+
+
 
 
 let AdminCategoryAddComponent = class AdminCategoryAddComponent {
-    constructor() { }
+    constructor(categoryService) {
+        this.categoryService = categoryService;
+        this.Category = new src_app_models_category__WEBPACK_IMPORTED_MODULE_3__["Category"]();
+    }
     ngOnInit() {
     }
+    btnCategorySave_click() {
+        this.Category.name = this.Name;
+        //this.Category.isActive = this.IsActive;
+        this.categoryService.saveCategory(this.Category);
+    }
 };
+AdminCategoryAddComponent.ctorParameters = () => [
+    { type: _service_category_service_service__WEBPACK_IMPORTED_MODULE_2__["CategoryService"] }
+];
 AdminCategoryAddComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-admin-category-add',
@@ -654,45 +669,45 @@ AdminHomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/admin/page/post/post.component.css":
-/*!****************************************************!*\
-  !*** ./src/app/admin/page/post/post.component.css ***!
-  \****************************************************/
+/***/ "./src/app/admin/page/adminpost/adminpost.component.css":
+/*!**************************************************************!*\
+  !*** ./src/app/admin/page/adminpost/adminpost.component.css ***!
+  \**************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL3BhZ2UvcG9zdC9wb3N0LmNvbXBvbmVudC5jc3MifQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL3BhZ2UvYWRtaW5wb3N0L2FkbWlucG9zdC5jb21wb25lbnQuY3NzIn0= */");
 
 /***/ }),
 
-/***/ "./src/app/admin/page/post/post.component.ts":
-/*!***************************************************!*\
-  !*** ./src/app/admin/page/post/post.component.ts ***!
-  \***************************************************/
-/*! exports provided: PostComponent */
+/***/ "./src/app/admin/page/adminpost/adminpost.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/admin/page/adminpost/adminpost.component.ts ***!
+  \*************************************************************/
+/*! exports provided: AdminPostComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostComponent", function() { return PostComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminPostComponent", function() { return AdminPostComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-let PostComponent = class PostComponent {
+let AdminPostComponent = class AdminPostComponent {
     constructor() { }
     ngOnInit() {
     }
 };
-PostComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+AdminPostComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-post',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./post.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/page/post/post.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./post.component.css */ "./src/app/admin/page/post/post.component.css")).default]
+        selector: 'app-adminpost',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./adminpost.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/page/adminpost/adminpost.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./adminpost.component.css */ "./src/app/admin/page/adminpost/adminpost.component.css")).default]
     })
-], PostComponent);
+], AdminPostComponent);
 
 
 
@@ -717,7 +732,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _admin_component_adminlayout_adminlayout_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./admin/component/adminlayout/adminlayout.component */ "./src/app/admin/component/adminlayout/adminlayout.component.ts");
 /* harmony import */ var _admin_page_adminhome_adminhome_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./admin/page/adminhome/adminhome.component */ "./src/app/admin/page/adminhome/adminhome.component.ts");
 /* harmony import */ var _admin_page_admincategory_admincategory_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./admin/page/admincategory/admincategory.component */ "./src/app/admin/page/admincategory/admincategory.component.ts");
-/* harmony import */ var _admin_page_post_post_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./admin/page/post/post.component */ "./src/app/admin/page/post/post.component.ts");
+/* harmony import */ var _admin_page_adminpost_adminpost_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./admin/page/adminpost/adminpost.component */ "./src/app/admin/page/adminpost/adminpost.component.ts");
 /* harmony import */ var _admin_component_admin_category_add_admin_category_add_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./admin/component/admin-category-add/admin-category-add.component */ "./src/app/admin/component/admin-category-add/admin-category-add.component.ts");
 /* harmony import */ var _admin_component_admin_category_list_admin_category_list_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./admin/component/admin-category-list/admin-category-list.component */ "./src/app/admin/component/admin-category-list/admin-category-list.component.ts");
 
@@ -751,9 +766,7 @@ const routes = [
     {
         path: "admin", component: _admin_component_adminlayout_adminlayout_component__WEBPACK_IMPORTED_MODULE_6__["AdminLayoutComponent"], children: [
             {
-                path: "home", component: _admin_page_adminhome_adminhome_component__WEBPACK_IMPORTED_MODULE_7__["AdminHomeComponent"], children: [{
-                        path: "post", component: _admin_page_post_post_component__WEBPACK_IMPORTED_MODULE_9__["PostComponent"]
-                    }]
+                path: "home", component: _admin_page_adminhome_adminhome_component__WEBPACK_IMPORTED_MODULE_7__["AdminHomeComponent"]
             },
             {
                 path: "category", component: _admin_page_admincategory_admincategory_component__WEBPACK_IMPORTED_MODULE_8__["AdminCategoryComponent"], children: [
@@ -766,7 +779,7 @@ const routes = [
                 ]
             },
             {
-                path: "post", component: _admin_page_post_post_component__WEBPACK_IMPORTED_MODULE_9__["PostComponent"]
+                path: "post", component: _admin_page_adminpost_adminpost_component__WEBPACK_IMPORTED_MODULE_9__["AdminPostComponent"]
             }
         ]
     }
@@ -850,21 +863,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _ui_component_card_card_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ui/component/card/card.component */ "./src/app/ui/component/card/card.component.ts");
-/* harmony import */ var _ui_component_post_list_post_list_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ui/component/post-list/post-list.component */ "./src/app/ui/component/post-list/post-list.component.ts");
-/* harmony import */ var _ui_component_search_search_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ui/component/search/search.component */ "./src/app/ui/component/search/search.component.ts");
-/* harmony import */ var _ui_page_home_home_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./ui/page/home/home.component */ "./src/app/ui/page/home/home.component.ts");
-/* harmony import */ var _ui_page_about_about_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./ui/page/about/about.component */ "./src/app/ui/page/about/about.component.ts");
-/* harmony import */ var _ui_component_cagetorylist_cagetorylist_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./ui/component/cagetorylist/cagetorylist.component */ "./src/app/ui/component/cagetorylist/cagetorylist.component.ts");
-/* harmony import */ var _ui_component_mainlayout_mainlayout_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./ui/component/mainlayout/mainlayout.component */ "./src/app/ui/component/mainlayout/mainlayout.component.ts");
-/* harmony import */ var _admin_component_adminlayout_adminlayout_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./admin/component/adminlayout/adminlayout.component */ "./src/app/admin/component/adminlayout/adminlayout.component.ts");
-/* harmony import */ var _admin_page_adminhome_adminhome_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./admin/page/adminhome/adminhome.component */ "./src/app/admin/page/adminhome/adminhome.component.ts");
-/* harmony import */ var _admin_page_admincategory_admincategory_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./admin/page/admincategory/admincategory.component */ "./src/app/admin/page/admincategory/admincategory.component.ts");
-/* harmony import */ var _admin_page_post_post_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./admin/page/post/post.component */ "./src/app/admin/page/post/post.component.ts");
-/* harmony import */ var _admin_component_admin_category_list_admin_category_list_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./admin/component/admin-category-list/admin-category-list.component */ "./src/app/admin/component/admin-category-list/admin-category-list.component.ts");
-/* harmony import */ var _admin_component_admin_category_add_admin_category_add_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./admin/component/admin-category-add/admin-category-add.component */ "./src/app/admin/component/admin-category-add/admin-category-add.component.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _ui_component_card_card_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ui/component/card/card.component */ "./src/app/ui/component/card/card.component.ts");
+/* harmony import */ var _ui_component_post_list_post_list_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ui/component/post-list/post-list.component */ "./src/app/ui/component/post-list/post-list.component.ts");
+/* harmony import */ var _ui_component_search_search_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./ui/component/search/search.component */ "./src/app/ui/component/search/search.component.ts");
+/* harmony import */ var _ui_page_home_home_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./ui/page/home/home.component */ "./src/app/ui/page/home/home.component.ts");
+/* harmony import */ var _ui_page_about_about_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./ui/page/about/about.component */ "./src/app/ui/page/about/about.component.ts");
+/* harmony import */ var _ui_component_cagetorylist_cagetorylist_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./ui/component/cagetorylist/cagetorylist.component */ "./src/app/ui/component/cagetorylist/cagetorylist.component.ts");
+/* harmony import */ var _ui_component_mainlayout_mainlayout_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./ui/component/mainlayout/mainlayout.component */ "./src/app/ui/component/mainlayout/mainlayout.component.ts");
+/* harmony import */ var _admin_component_adminlayout_adminlayout_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./admin/component/adminlayout/adminlayout.component */ "./src/app/admin/component/adminlayout/adminlayout.component.ts");
+/* harmony import */ var _admin_page_adminhome_adminhome_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./admin/page/adminhome/adminhome.component */ "./src/app/admin/page/adminhome/adminhome.component.ts");
+/* harmony import */ var _admin_page_admincategory_admincategory_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./admin/page/admincategory/admincategory.component */ "./src/app/admin/page/admincategory/admincategory.component.ts");
+/* harmony import */ var _admin_page_adminpost_adminpost_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./admin/page/adminpost/adminpost.component */ "./src/app/admin/page/adminpost/adminpost.component.ts");
+/* harmony import */ var _admin_component_admin_category_list_admin_category_list_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./admin/component/admin-category-list/admin-category-list.component */ "./src/app/admin/component/admin-category-list/admin-category-list.component.ts");
+/* harmony import */ var _admin_component_admin_category_add_admin_category_add_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./admin/component/admin-category-add/admin-category-add.component */ "./src/app/admin/component/admin-category-add/admin-category-add.component.ts");
+
 
 
 
@@ -889,31 +904,50 @@ let AppModule = class AppModule {
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
-            _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
-            _ui_component_card_card_component__WEBPACK_IMPORTED_MODULE_6__["CardComponent"],
-            _ui_component_post_list_post_list_component__WEBPACK_IMPORTED_MODULE_7__["PostListComponent"],
-            _ui_component_search_search_component__WEBPACK_IMPORTED_MODULE_8__["SearchComponent"],
-            _ui_page_home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"],
-            _ui_page_about_about_component__WEBPACK_IMPORTED_MODULE_10__["AboutComponent"],
-            _ui_component_cagetorylist_cagetorylist_component__WEBPACK_IMPORTED_MODULE_11__["CagetorylistComponent"],
-            _ui_component_mainlayout_mainlayout_component__WEBPACK_IMPORTED_MODULE_12__["MainlayoutComponent"],
-            _admin_component_adminlayout_adminlayout_component__WEBPACK_IMPORTED_MODULE_13__["AdminLayoutComponent"],
-            _admin_page_adminhome_adminhome_component__WEBPACK_IMPORTED_MODULE_14__["AdminHomeComponent"],
-            _admin_page_admincategory_admincategory_component__WEBPACK_IMPORTED_MODULE_15__["AdminCategoryComponent"],
-            _admin_page_post_post_component__WEBPACK_IMPORTED_MODULE_16__["PostComponent"],
-            _admin_component_admin_category_list_admin_category_list_component__WEBPACK_IMPORTED_MODULE_17__["AdminCategoryListComponent"],
-            _admin_component_admin_category_add_admin_category_add_component__WEBPACK_IMPORTED_MODULE_18__["AdminCategoryAddComponent"]
+            _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
+            _ui_component_card_card_component__WEBPACK_IMPORTED_MODULE_7__["CardComponent"],
+            _ui_component_post_list_post_list_component__WEBPACK_IMPORTED_MODULE_8__["PostListComponent"],
+            _ui_component_search_search_component__WEBPACK_IMPORTED_MODULE_9__["SearchComponent"],
+            _ui_page_home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"],
+            _ui_page_about_about_component__WEBPACK_IMPORTED_MODULE_11__["AboutComponent"],
+            _ui_component_cagetorylist_cagetorylist_component__WEBPACK_IMPORTED_MODULE_12__["CagetorylistComponent"],
+            _ui_component_mainlayout_mainlayout_component__WEBPACK_IMPORTED_MODULE_13__["MainlayoutComponent"],
+            _admin_component_adminlayout_adminlayout_component__WEBPACK_IMPORTED_MODULE_14__["AdminLayoutComponent"],
+            _admin_page_adminhome_adminhome_component__WEBPACK_IMPORTED_MODULE_15__["AdminHomeComponent"],
+            _admin_page_admincategory_admincategory_component__WEBPACK_IMPORTED_MODULE_16__["AdminCategoryComponent"],
+            _admin_page_adminpost_adminpost_component__WEBPACK_IMPORTED_MODULE_17__["AdminPostComponent"],
+            _admin_component_admin_category_list_admin_category_list_component__WEBPACK_IMPORTED_MODULE_18__["AdminCategoryListComponent"],
+            _admin_component_admin_category_add_admin_category_add_component__WEBPACK_IMPORTED_MODULE_19__["AdminCategoryAddComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
-            _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"]
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"]
         ],
         providers: [],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
     })
 ], AppModule);
 
+
+
+/***/ }),
+
+/***/ "./src/app/models/category.ts":
+/*!************************************!*\
+  !*** ./src/app/models/category.ts ***!
+  \************************************/
+/*! exports provided: Category */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Category", function() { return Category; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+class Category {
+}
 
 
 /***/ }),
@@ -922,34 +956,48 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*!*****************************************************!*\
   !*** ./src/app/service/category-service.service.ts ***!
   \*****************************************************/
-/*! exports provided: CategoryServiceService */
+/*! exports provided: CategoryService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CategoryServiceService", function() { return CategoryServiceService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CategoryService", function() { return CategoryService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../environments/environment */ "./src/environments/environment.ts");
 
 
 
-let CategoryServiceService = class CategoryServiceService {
+
+let CategoryService = class CategoryService {
     constructor(http) {
         this.http = http;
     }
     getAllCategories() {
-        return this.http.get('http://localhost:8080/category/get');
+        let resultt = this.http.get(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].baseUrl + 'category');
+        console.log(resultt);
+        return resultt;
+    }
+    saveCategory(category) {
+        let postData = new FormData();
+        postData.append('name', category.name);
+        let result = this.http.post(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].baseUrl + 'category', postData);
+        return result.subscribe(data => {
+            console.log(data);
+        }, err => {
+            //console.log("Error: " + err)
+        });
     }
 };
-CategoryServiceService.ctorParameters = () => [
+CategoryService.ctorParameters = () => [
     { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
 ];
-CategoryServiceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+CategoryService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
         providedIn: 'root'
     })
-], CategoryServiceService);
+], CategoryService);
 
 
 
@@ -985,21 +1033,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let CagetorylistComponent = class CagetorylistComponent {
-    constructor(categoryServiceService) {
-        this.categoryServiceService = categoryServiceService;
+    constructor(categoryService) {
+        this.categoryService = categoryService;
     }
     ngOnInit() {
         this.getAllCategory();
     }
     getAllCategory() {
-        this.categories = this.categoryServiceService.getAllCategories().subscribe(res => {
-            console.log(res);
+        this.categories = this.categoryService.getAllCategories().subscribe(res => {
             this.categories = res;
         });
     }
 };
 CagetorylistComponent.ctorParameters = () => [
-    { type: _service_category_service_service__WEBPACK_IMPORTED_MODULE_2__["CategoryServiceService"] }
+    { type: _service_category_service_service__WEBPACK_IMPORTED_MODULE_2__["CategoryService"] }
 ];
 CagetorylistComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1288,21 +1335,11 @@ HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
 
 const environment = {
-    production: false
+    production: false,
+    baseUrl: "http://localhost:8080/"
 };
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
 
 
 /***/ }),

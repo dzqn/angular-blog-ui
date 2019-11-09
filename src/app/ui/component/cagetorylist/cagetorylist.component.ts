@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {CategoryServiceService} from '../../../service/category-service.service';
-import {Category} from '../../../models/category';
+import {CategoryService} from '../../../service/category-service.service';
 
 
 @Component({
@@ -12,7 +11,7 @@ export class CagetorylistComponent implements OnInit {
 
   categories: any;
 
-  constructor(private categoryServiceService: CategoryServiceService ) { 
+  constructor(private categoryService: CategoryService ) { 
   }
 
   ngOnInit() {
@@ -20,8 +19,7 @@ export class CagetorylistComponent implements OnInit {
   }
 
   getAllCategory(){
-    this.categories = this.categoryServiceService.getAllCategories().subscribe(res => {
-      console.log(res);
+    this.categories = this.categoryService.getAllCategories().subscribe(res => {
       this.categories = res;
     })
   }

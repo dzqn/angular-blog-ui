@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { CategoryService } from '../../../service/category-service.service'
+import { Category } from 'src/app/models/category';
+
 
 @Component({
   selector: 'app-admin-category-add',
@@ -7,9 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminCategoryAddComponent implements OnInit {
 
-  constructor() { }
+  Category: Category = new Category();
+  Name;
+  IsActive;
+
+  constructor(private categoryService: CategoryService) { 
+  }
 
   ngOnInit() {
+  }
+
+  btnCategorySave_click(): void {
+    this.Category.name = this.Name;
+    //this.Category.isActive = this.IsActive;
+
+    this.categoryService.saveCategory(this.Category);
   }
 
 }

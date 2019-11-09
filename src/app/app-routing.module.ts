@@ -6,7 +6,7 @@ import { MainlayoutComponent } from './ui/component/mainlayout/mainlayout.compon
 import { AdminLayoutComponent } from './admin/component/adminlayout/adminlayout.component';
 import { AdminHomeComponent } from './admin/page/adminhome/adminhome.component';
 import { AdminCategoryComponent } from './admin/page/admincategory/admincategory.component';
-import { PostComponent } from './admin/page/post/post.component';
+import { AdminPostComponent } from './admin/page/adminpost/adminpost.component';
 import { AdminCategoryAddComponent } from './admin/component/admin-category-add/admin-category-add.component';
 import { AdminCategoryListComponent } from './admin/component/admin-category-list/admin-category-list.component';
 
@@ -31,11 +31,7 @@ const routes: Routes = [
   {
     path: "admin", component: AdminLayoutComponent, children: [
       {
-        path: "home", component: AdminHomeComponent, children: [
-          {
-            path: "post", component: PostComponent
-          }
-        ]
+        path: "home", component: AdminHomeComponent
       },
       {
         path: "category", component: AdminCategoryComponent, children: [
@@ -48,7 +44,7 @@ const routes: Routes = [
         ]
       },
       {
-        path: "post", component: PostComponent
+        path: "post", component: AdminPostComponent
       }
     ]
   }
