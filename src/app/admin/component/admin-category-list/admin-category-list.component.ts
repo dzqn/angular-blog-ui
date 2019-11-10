@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {CategoryService} from '../../../service/category-service.service';
+import { Category } from 'src/app/models/category';
 
 @Component({
   selector: 'app-admin-category-list',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminCategoryListComponent implements OnInit {
 
-  constructor() { }
+  categories: Category[];
+
+  constructor(private categoryService: CategoryService) { }
 
   ngOnInit() {
+    this.getAllCategory();
   }
 
+  getAllCategory(){
+    this.categoryService.getAllCategories().subscribe(res => {
+      this.categories = res;
+    })
+  }
 }

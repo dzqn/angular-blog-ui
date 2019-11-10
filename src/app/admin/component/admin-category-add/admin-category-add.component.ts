@@ -14,7 +14,7 @@ export class AdminCategoryAddComponent implements OnInit {
   Name;
   IsActive;
 
-  constructor(private categoryService: CategoryService) { 
+  constructor(private categoryService: CategoryService) {
   }
 
   ngOnInit() {

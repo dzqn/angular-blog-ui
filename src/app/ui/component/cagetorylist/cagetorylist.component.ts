@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {CategoryService} from '../../../service/category-service.service';
+import { CategoryService } from '../../../service/category-service.service';
+import { Category } from 'src/app/models/category';
 
 
 @Component({
@@ -9,20 +10,20 @@ import {CategoryService} from '../../../service/category-service.service';
 })
 export class CagetorylistComponent implements OnInit {
 
-  categories: any;
+  categories: Category[];
 
-  constructor(private categoryService: CategoryService ) { 
+  constructor(private categoryService: CategoryService) {
   }
 
   ngOnInit() {
     this.getAllCategory();
   }
 
-  getAllCategory(){
-    this.categories = this.categoryService.getAllCategories().subscribe(res => {
+  getAllCategory() {
+    this.categoryService.getAllCategories().subscribe(res => {
       this.categories = res;
     })
   }
-  
+
 
 }

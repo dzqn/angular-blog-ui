@@ -13,21 +13,18 @@ export class CategoryService {
 
   getAllCategories(): Observable<Category[]> {
     let resultt = this.http.get<any>(environment.baseUrl + 'category');
-
-    console.log(resultt);
     return resultt;
   }
 
   saveCategory(category: Category): any {
+    let headers = new HttpHeaders();
+    headers = headers.set('Content-Type', 'application/json; charset=utf-8');
 
-    let postData = new FormData();
-    postData.append('name', category.name);
-
-    let result = this.http.post<Category>(environment.baseUrl + 'category',JSON.stringify(postData));
+    let result = this.http.post<Category>(environment.baseUrl + 'category',JSON.stringify(category) ,{headers});
     return result.subscribe(data => {
       console.log(data)
     }, err => {
-      //console.log("Error: " + err)
+      console.log("Error: " + err)
     });
   }
 }

@@ -1,1 +1,18 @@
-<p>admin-category-list works!</p>
+
+<div class="row m-2">
+        <p>Category List</p>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let category of categories">
+                <th scope="row">{{category.id}}</th>
+                <td>{{category.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
