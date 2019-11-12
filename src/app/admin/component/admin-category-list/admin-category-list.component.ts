@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {CategoryService} from '../../../services/category-service.service';
+import { CategoryService } from '../../../services/category-service.service';
 import { Category } from 'src/app/models/category';
+import { Router, ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-admin-category-list',
@@ -9,17 +11,34 @@ import { Category } from 'src/app/models/category';
 })
 export class AdminCategoryListComponent implements OnInit {
 
-  categories: Category[];
+  categories: Observable<Category[]>;
 
-  constructor(private categoryService: CategoryService) { }
+  constructor(private router: Router, private categoryService: CategoryService) { }
 
   ngOnInit() {
     this.getAllCategory();
   }
 
-  getAllCategory(){
-    this.categoryService.getAllCategories().subscribe(res => {
-      this.categories = res;
-    })
+  getAllCategory() {
+    this.categories = this.categoryService.getAllCategories();
   }
+
+  deleteCategory(id: number) {
+    let res = this.categoryService.deleteCategory(id);
+    res.subscribe(data => {
+      console.log("Resp:" + data);
+      this.getAllCategory();
+    }, err => {
+      console.log("Err:" + err);
+    });
+  }
+
+  detailCategory(id: number) {
+    console.log(id);
+  }
+
+  updateCategory(id: number) {
+    console.log(id);
+  }
+
 }

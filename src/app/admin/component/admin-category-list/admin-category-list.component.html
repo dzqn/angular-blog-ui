@@ -5,13 +5,19 @@
         <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">First</th>
+                <th scope="col">Name</th>
+                <th scope="col">Actions</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let category of categories">
-                <th scope="row">{{category.id}}</th>
+            <tr *ngFor="let category of categories | async">
+                <td scope="row">{{category.id}}</td>
                 <td>{{category.name}}</td>
+                <td class="float-right">
+                    <button (click)="deleteCategory(category.id)" class="btn btn-danger">Delete</button>
+                    <button (click)="detailCategory(category.id)" class="btn btn-info" style="margin-left: 20px">Details</button>
+                    <button (click)="updateCategory(category.id)" class="btn btn-info" style="margin-left: 20px">Update</button>
+                </td>
             </tr>
         </tbody>
     </table>

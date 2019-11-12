@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CategoryService } from '../../../services/category-service.service'
 import { Category } from 'src/app/models/category';
+import { Router, ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -14,7 +15,7 @@ export class AdminCategoryAddComponent implements OnInit {
   Name;
   IsActive;
 
-  constructor(private categoryService: CategoryService) {
+  constructor(private router: Router, private categoryService: CategoryService) {
   }
 
   ngOnInit() {
@@ -24,7 +25,12 @@ export class AdminCategoryAddComponent implements OnInit {
     this.Category.name = this.Name;
     //this.Category.isActive = this.IsActive;
 
-    this.categoryService.saveCategory(this.Category);
+    this.categoryService.saveCategory(this.Category).subscribe(data => {
+      console.log("Resp:" + data);
+    }, err => {
+      console.log("Error:" + err);
+    });
+    this.router.navigate(['/admin/category/listcategory']);
   }
 
 }
