@@ -1,22 +1,27 @@
 
-<div class="row m-2">
+<div class="row m-1">
         <p>Category List</p>
     <table class="table table-dark">
         <thead>
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
-                <th scope="col">Actions</th>
+                <th scope="col">Create</th>
+                <th scope="col">Update</th>
+                <th scope="col">Active?</th>
+                <th scope="col" class="">Actions</th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let category of categories | async">
                 <td scope="row">{{category.id}}</td>
                 <td>{{category.name}}</td>
-                <td class="float-right">
+                <td>{{category.createDate | date: 'dd/MM/yyyy hh:mm'}}</td>
+                <td>{{category.updateDate | date: 'dd/MM/yyyy'}}</td>
+                <td>{{category.isActive}}</td>
+                <td class="t">
                     <button (click)="deleteCategory(category.id)" class="btn btn-danger">Delete</button>
-                    <button (click)="detailCategory(category.id)" class="btn btn-info" style="margin-left: 20px">Details</button>
-                    <button (click)="updateCategory(category.id)" class="btn btn-info" style="margin-left: 20px">Update</button>
+                    <button (click)="updateCategory(category.id)" class="btn btn-info" style="margin-left: 5x">Update</button>
                 </td>
             </tr>
         </tbody>

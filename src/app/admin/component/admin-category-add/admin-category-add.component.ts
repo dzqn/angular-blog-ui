@@ -23,7 +23,7 @@ export class AdminCategoryAddComponent implements OnInit {
 
   btnCategorySave_click(): void {
     this.Category.name = this.Name;
-    //this.Category.isActive = this.IsActive;
+    this.Category.isActive = this.IsActive;
 
     this.categoryService.saveCategory(this.Category).subscribe(data => {
       console.log("Resp:" + data);
