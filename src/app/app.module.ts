@@ -18,6 +18,8 @@ import { AdminCategoryComponent } from './admin/page/admincategory/admincategory
 import { AdminPostComponent } from './admin/page/adminpost/adminpost.component';
 import { AdminCategoryListComponent } from './admin/component/admin-category-list/admin-category-list.component';
 import {AdminCategoryAddComponent} from './admin/component/admin-category-add/admin-category-add.component';
+import { AdminPostAddComponent } from './admin/component/admin-post-add/admin-post-add.component';
+import { AdminPostListComponent } from './admin/component/admin-post-list/admin-post-list.component';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import {AdminCategoryAddComponent} from './admin/component/admin-category-add/ad
     AdminCategoryComponent,
     AdminPostComponent,
     AdminCategoryListComponent,
-    AdminCategoryAddComponent
+    AdminCategoryAddComponent,
+    AdminPostAddComponent,
+    AdminPostListComponent
   ],
   imports: [
     BrowserModule,

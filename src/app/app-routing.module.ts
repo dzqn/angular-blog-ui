@@ -9,6 +9,9 @@ import { AdminCategoryComponent } from './admin/page/admincategory/admincategory
 import { AdminPostComponent } from './admin/page/adminpost/adminpost.component';
 import { AdminCategoryAddComponent } from './admin/component/admin-category-add/admin-category-add.component';
 import { AdminCategoryListComponent } from './admin/component/admin-category-list/admin-category-list.component';
+import {AdminPostAddComponent} from './admin/component/admin-post-add/admin-post-add.component';
+import {AdminPostListComponent} from './admin/component/admin-post-list/admin-post-list.component';
+
 
 
 
@@ -44,7 +47,14 @@ const routes: Routes = [
         ]
       },
       {
-        path: "post", component: AdminPostComponent
+        path: "post", component: AdminPostComponent,children:[
+          {
+            path:"addpost",component:AdminPostAddComponent
+          },
+          {
+            path:"listpost",component:AdminPostListComponent
+          }
+        ]
       }
     ]
   }
