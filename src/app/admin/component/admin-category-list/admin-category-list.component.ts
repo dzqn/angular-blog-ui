@@ -11,6 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class AdminCategoryListComponent implements OnInit {
 
+  //Fields
   categories: Observable<Category[]>;
 
   constructor(private router: Router, private categoryService: CategoryService) { }

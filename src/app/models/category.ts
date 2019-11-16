@@ -1,5 +1,5 @@
 export class Category{
-    //id:Number;
+    id:Number;
     name:string;
     isActive:boolean;
 }

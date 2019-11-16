@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Post } from 'src/app/models/post';
+import { PostService } from 'src/app/services/post-service.service';
 
 @Component({
   selector: 'app-admin-post-list',
@@ -7,9 +10,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminPostListComponent implements OnInit {
 
-  constructor() { }
+  //Fields
+  allPosts: Observable<Post[]>
+
+  constructor(private postService: PostService) { }
 
   ngOnInit() {
+    this.getAllPosts();
+  }
+
+  getAllPosts() {
+    this.allPosts = this.postService.getAllPosts();
+  }
+
+  deletePost() {
+
+  }
+
+  updatePost() {
+
   }
 
 }

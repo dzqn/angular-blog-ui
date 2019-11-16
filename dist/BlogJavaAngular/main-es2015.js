@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<h5 class=\"text-center\">Category Add</h5>\n<div class=\"row\">\n    <form class=\"col-md-12\">\n        <div class=\"form-group\">\n            <label for=\"txtCategoryName\">Category Name</label>\n            <input type=\"text\" class=\"form-control\" [(ngModel)]=\"Name\" name=\"name\" id=\"txtCategoryName\">\n        </div>\n        <div class=\"form-check\">\n            <input type=\"checkbox\" class=\"form-check-input\" [(ngModel)]=\"IsActive\" name=\"isActive\" id=\"chckIsActive\">\n            <label class=\"form-check-label\" for=\"chckIsActive\">is active ?</label>\n        </div>\n        <button type=\"button\" id=\"btnCategorySave\" (click)=\"btnCategorySave_click()\"\n            class=\"btn btn-primary col-md-2\">Save</button>\n        {{Category | json}}<br>\n    </form>\n</div>\n<br><br>");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"row\">\n    <form class=\"col-md-12\">\n        <div class=\"form-group\">\n            <label for=\"txtCategoryName\">Category Name</label>\n            <input type=\"text\" class=\"form-control\" [(ngModel)]=\"Name\" name=\"name\" id=\"txtCategoryName\">\n        </div>\n        <div class=\"form-check\">\n            <input type=\"checkbox\" class=\"form-check-input\" [(ngModel)]=\"IsActive\" name=\"isActive\" id=\"chckIsActive\">\n            <label class=\"form-check-label\" for=\"chckIsActive\">is active ?</label>\n        </div>\n        <button type=\"button\" id=\"btnCategorySave\" (click)=\"btnCategorySave_click()\"\n            class=\"btn btn-primary col-md-2\">Save</button>\n    </form>\n</div>\n<br><br>");
 
 /***/ }),
 
@@ -45,7 +45,33 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>admin-category-list works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"row m-1\">\n        <p>Category List</p>\n    <table class=\"table table-dark\">\n        <thead>\n            <tr>\n                <th scope=\"col\">#</th>\n                <th scope=\"col\">Name</th>\n                <th scope=\"col\">Create</th>\n                <th scope=\"col\">Update</th>\n                <th scope=\"col\">Active?</th>\n                <th scope=\"col\" class=\"\">Actions</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr *ngFor=\"let category of categories | async\">\n                <td scope=\"row\">{{category.id}}</td>\n                <td>{{category.name}}</td>\n                <td>{{category.createDate | date: 'dd/MM/yyyy hh:mm'}}</td>\n                <td>{{category.updateDate | date: 'dd/MM/yyyy'}}</td>\n                <td>{{category.isActive}}</td>\n                <td class=\"t\">\n                    <button (click)=\"deleteCategory(category.id)\" class=\"btn btn-danger\">Delete</button>\n                    <button (click)=\"updateCategory(category.id)\" class=\"btn btn-info\" style=\"margin-left: 5x\">Update</button>\n                </td>\n            </tr>\n        </tbody>\n    </table>\n</div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/component/admin-post-add/admin-post-add.component.html":
+/*!********************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/admin/component/admin-post-add/admin-post-add.component.html ***!
+  \********************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"row\">\n    <form class=\"col-md-12\">\n        <div class=\"form-group\">\n            <label for=\"txtPostTitle\">Title</label>\n            <input type=\"text\" class=\"form-control\" [(ngModel)]=\"title\" name=\"title\" id=\"txtPostTitle\">\n        </div>\n        <div class=\"form-group\">\n            <label for=\"exampleFormControlTextarea1\">Body</label>\n            <textarea class=\"form-control\" [(ngModel)]=\"body\" id=\"txtPostBody\" name=\"body\" rows=\"5\"></textarea>\n          </div>\n          <div class=\"input-group mb-3\">\n            <div class=\"input-group-prepend\">\n              <label class=\"input-group-text\" for=\"inputGroupSelect01\">Category</label>\n            </div>\n            <select class=\"custom-select\" [(ngModel)]=\"categoryId\" id=\"slcCategory\" name=\"category\">\n              <option selected>Seçiniz...</option>\n              <option *ngFor=\"let category of allCategories | async\" value={{category.id}}>{{category.name}}</option>\n            </select>\n          </div>\n        <div class=\"form-check\">\n            <input type=\"checkbox\" class=\"form-check-input\" [(ngModel)]=\"isActive\" name=\"isActive\" id=\"chckIsActive\">\n            <label class=\"form-check-label\" for=\"chckIsActive\">is active ?</label>\n        </div>\n        <br>\n        <button type=\"button\" id=\"btnCategorySave\" (click)=\"btnPostSave_click(categoryId)\"\n            class=\"btn btn-primary col-md-2\">Save</button>\n    </form>\n</div>\n<br><br>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/component/admin-post-list/admin-post-list.component.html":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/admin/component/admin-post-list/admin-post-list.component.html ***!
+  \**********************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<p>admin-post-list works!</p>\n");
 
 /***/ }),
 
@@ -58,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container justify-content-around\">\n  <div class=\"row mt-3\">\n    <div class=\"col-md-4\">\n      <div class=\"col-md-12\">\n        <div class=\"bg-secondary rounded\">\n          <ul class=\"navbar-nav\">\n            <li class=\"nav-item\">\n              <a routerLink=\"home\" class=\"btn btn-danger col-md-12\" role=\"button\" routerLinkActive=\"active\">\n                Anasayfa</a>\n            </li>\n            <li class=\"nav-item\">\n              <a routerLink=\"category\" class=\"btn btn-danger col-md-12\" role=\"button\"\n                routerLinkActive=\"active\"> Kategoriler (Categories)</a>\n            </li>\n            <li class=\"nav-item\">\n              <a routerLink=\"post\" class=\"btn btn-danger col-md-12\" role=\"button\" routerLinkActive=\"active\">\n                Makaleler (Posts)</a>\n            </li>\n          </ul>\n        </div>\n      </div>\n    </div>\n    <div class=\"col-md-8\">\n      <div class=\"col-md-12\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n  </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container justify-content-around\">\n  <div class=\"row mt-3\">\n    <div class=\"col-md-3\">\n      <div class=\"col-md-12\">\n        <div class=\"bg-secondary rounded\">\n          <ul class=\"navbar-nav\">\n            <li class=\"nav-item\">\n              <a routerLink=\"home\" class=\"btn btn-danger col-md-12\" role=\"button\" routerLinkActive=\"active\">\n                | Anasayfa |</a>\n            </li>\n            <li class=\"nav-item\">\n              <a routerLink=\"category\" class=\"btn btn-danger col-md-12\" role=\"button\"\n                routerLinkActive=\"active\"> | Categories |  </a>\n            </li>\n            <li class=\"nav-item\">\n              <a routerLink=\"post\" class=\"btn btn-danger col-md-12\" role=\"button\" routerLinkActive=\"active\">\n                | Posts |</a>\n            </li>\n          </ul>\n        </div>\n      </div>\n    </div>\n    <div class=\"col-md-9\">\n      <div class=\"col-md-12\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n  </div>\n</div>\n");
 
 /***/ }),
 
@@ -97,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"bg-secondary rounded\">\n  <div class=\"container\">\n    <p>post works!</p>\n  </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"bg-secondary rounded\">\n  <nav class=\"navbar navbar-expand-sm\">\n      <ul class=\"navbar-nav\">\n          <li class=\"nav-item\">\n              <a routerLink=\"addpost\" class=\"btn btn-primary active\" role=\"button\"\n                  routerLinkActive=\"active\">Add</a>\n          </li>\n          <li class=\"nav-item\" style=\"margin-left: 10px;\">\n              <a routerLink=\"listpost\" class=\"btn btn-primary active\" role=\"button\"\n                  routerLinkActive=\"active\">List</a>\n          </li>\n      </ul>\n  </nav>\n  <div class=\"container\">\n      <router-outlet></router-outlet>\n  </div>\n</div>\n");
 
 /***/ }),
 
@@ -149,7 +175,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container justify-content-around\">\n    <div class=\"row mt-3\">\n      <div class=\"col-md-4\">\n        <div class=\"col-md-12 mb-3\">\n          <app-card></app-card>\n        </div>\n        <div class=\"col-md-12 mb-3\">\n          <app-search></app-search>\n        </div>\n        <div class=\"col-md-12 mb-3\">\n          <app-cagetorylist></app-cagetorylist>\n        </div>\n      </div>\n      <div class=\"col-md-8\">\n        <div class=\"col-md-12\">\n          <router-outlet></router-outlet>\n        </div>\n      </div>\n    </div>\n  </div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container justify-content-around\">\n    <div class=\"row mt-3\">\n      <div class=\"col-md-3\">\n        <div class=\"col-md-12 mb-3\">\n          <app-card></app-card>\n        </div>\n        <div class=\"col-md-12 mb-3\">\n          <app-search></app-search>\n        </div>\n        <div class=\"col-md-12 mb-3\">\n          <app-cagetorylist></app-cagetorylist>\n        </div>\n      </div>\n      <div class=\"col-md-9\">\n        <div class=\"col-md-12\">\n          <router-outlet></router-outlet>\n        </div>\n      </div>\n    </div>\n  </div>\n");
 
 /***/ }),
 
@@ -459,27 +485,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminCategoryAddComponent", function() { return AdminCategoryAddComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _service_category_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../service/category-service.service */ "./src/app/service/category-service.service.ts");
+/* harmony import */ var _services_category_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../services/category-service.service */ "./src/app/services/category-service.service.ts");
 /* harmony import */ var src_app_models_category__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/models/category */ "./src/app/models/category.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
 
 
 
 
 let AdminCategoryAddComponent = class AdminCategoryAddComponent {
-    constructor(categoryService) {
+    constructor(router, categoryService) {
+        this.router = router;
         this.categoryService = categoryService;
-        this.Category = new src_app_models_category__WEBPACK_IMPORTED_MODULE_3__["Category"]();
+        //Fiels
+        this.category = new src_app_models_category__WEBPACK_IMPORTED_MODULE_3__["Category"]();
+        this.name = "";
+        this.isActive = false;
     }
     ngOnInit() {
     }
     btnCategorySave_click() {
-        this.Category.name = this.Name;
-        //this.Category.isActive = this.IsActive;
-        this.categoryService.saveCategory(this.Category);
+        this.category.name = this.name;
+        this.category.isActive = this.isActive;
+        this.categoryService.saveCategory(this.category).subscribe(data => {
+            console.log("Resp:" + data);
+        }, err => {
+            console.log("Error:" + err);
+        });
+        this.router.navigate(['/admin/category/listcategory']);
     }
 };
 AdminCategoryAddComponent.ctorParameters = () => [
-    { type: _service_category_service_service__WEBPACK_IMPORTED_MODULE_2__["CategoryService"] }
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
+    { type: _services_category_service_service__WEBPACK_IMPORTED_MODULE_2__["CategoryService"] }
 ];
 AdminCategoryAddComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -518,13 +556,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminCategoryListComponent", function() { return AdminCategoryListComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_category_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../services/category-service.service */ "./src/app/services/category-service.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
+
 
 
 let AdminCategoryListComponent = class AdminCategoryListComponent {
-    constructor() { }
+    constructor(router, categoryService) {
+        this.router = router;
+        this.categoryService = categoryService;
+    }
     ngOnInit() {
+        this.getAllCategory();
+    }
+    getAllCategory() {
+        this.categories = this.categoryService.getAllCategories();
+    }
+    deleteCategory(id) {
+        let res = this.categoryService.deleteCategory(id);
+        res.subscribe(data => {
+            console.log("Resp:" + data);
+            this.getAllCategory();
+        }, err => {
+            console.log("Err:" + err);
+        });
+    }
+    detailCategory(id) {
+        console.log(id);
+    }
+    updateCategory(id) {
+        console.log(id);
     }
 };
+AdminCategoryListComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] },
+    { type: _services_category_service_service__WEBPACK_IMPORTED_MODULE_2__["CategoryService"] }
+];
 AdminCategoryListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-admin-category-list',
@@ -532,6 +600,124 @@ AdminCategoryListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./admin-category-list.component.css */ "./src/app/admin/component/admin-category-list/admin-category-list.component.css")).default]
     })
 ], AdminCategoryListComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/admin/component/admin-post-add/admin-post-add.component.css":
+/*!*****************************************************************************!*\
+  !*** ./src/app/admin/component/admin-post-add/admin-post-add.component.css ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2NvbXBvbmVudC9hZG1pbi1wb3N0LWFkZC9hZG1pbi1wb3N0LWFkZC5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/admin/component/admin-post-add/admin-post-add.component.ts":
+/*!****************************************************************************!*\
+  !*** ./src/app/admin/component/admin-post-add/admin-post-add.component.ts ***!
+  \****************************************************************************/
+/*! exports provided: AdminPostAddComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminPostAddComponent", function() { return AdminPostAddComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_category_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../services/category-service.service */ "./src/app/services/category-service.service.ts");
+/* harmony import */ var _services_post_service_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../services/post-service.service */ "./src/app/services/post-service.service.ts");
+
+
+
+
+let AdminPostAddComponent = class AdminPostAddComponent {
+    constructor(categoryService, postService) {
+        this.categoryService = categoryService;
+        this.postService = postService;
+        this.title = "";
+        this.body = "";
+        this.isActive = false;
+    }
+    ngOnInit() {
+        this.getAllCategories();
+    }
+    getAllCategories() {
+        this.allCategories = this.categoryService.getAllCategories();
+    }
+    btnPostSave_click(id) {
+        this.categoryService.getCategoryById(id).subscribe(response => {
+            this.selectedCategory = response;
+        });
+        this.post.category = this.selectedCategory;
+        this.post.title = this.title;
+        this.post.body = this.body;
+        this.post.isActive = this.isActive;
+        this.postService.savePost(this.post).subscribe(resp => {
+            console.log(resp);
+        });
+    }
+};
+AdminPostAddComponent.ctorParameters = () => [
+    { type: _services_category_service_service__WEBPACK_IMPORTED_MODULE_2__["CategoryService"] },
+    { type: _services_post_service_service__WEBPACK_IMPORTED_MODULE_3__["PostService"] }
+];
+AdminPostAddComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-admin-post-add',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./admin-post-add.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/component/admin-post-add/admin-post-add.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./admin-post-add.component.css */ "./src/app/admin/component/admin-post-add/admin-post-add.component.css")).default]
+    })
+], AdminPostAddComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/admin/component/admin-post-list/admin-post-list.component.css":
+/*!*******************************************************************************!*\
+  !*** ./src/app/admin/component/admin-post-list/admin-post-list.component.css ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2NvbXBvbmVudC9hZG1pbi1wb3N0LWxpc3QvYWRtaW4tcG9zdC1saXN0LmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/admin/component/admin-post-list/admin-post-list.component.ts":
+/*!******************************************************************************!*\
+  !*** ./src/app/admin/component/admin-post-list/admin-post-list.component.ts ***!
+  \******************************************************************************/
+/*! exports provided: AdminPostListComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminPostListComponent", function() { return AdminPostListComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let AdminPostListComponent = class AdminPostListComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+AdminPostListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-admin-post-list',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./admin-post-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/admin/component/admin-post-list/admin-post-list.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./admin-post-list.component.css */ "./src/app/admin/component/admin-post-list/admin-post-list.component.css")).default]
+    })
+], AdminPostListComponent);
 
 
 
@@ -735,6 +921,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _admin_page_adminpost_adminpost_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./admin/page/adminpost/adminpost.component */ "./src/app/admin/page/adminpost/adminpost.component.ts");
 /* harmony import */ var _admin_component_admin_category_add_admin_category_add_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./admin/component/admin-category-add/admin-category-add.component */ "./src/app/admin/component/admin-category-add/admin-category-add.component.ts");
 /* harmony import */ var _admin_component_admin_category_list_admin_category_list_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./admin/component/admin-category-list/admin-category-list.component */ "./src/app/admin/component/admin-category-list/admin-category-list.component.ts");
+/* harmony import */ var _admin_component_admin_post_add_admin_post_add_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./admin/component/admin-post-add/admin-post-add.component */ "./src/app/admin/component/admin-post-add/admin-post-add.component.ts");
+/* harmony import */ var _admin_component_admin_post_list_admin_post_list_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./admin/component/admin-post-list/admin-post-list.component */ "./src/app/admin/component/admin-post-list/admin-post-list.component.ts");
+
+
 
 
 
@@ -779,7 +969,14 @@ const routes = [
                 ]
             },
             {
-                path: "post", component: _admin_page_adminpost_adminpost_component__WEBPACK_IMPORTED_MODULE_9__["AdminPostComponent"]
+                path: "post", component: _admin_page_adminpost_adminpost_component__WEBPACK_IMPORTED_MODULE_9__["AdminPostComponent"], children: [
+                    {
+                        path: "addpost", component: _admin_component_admin_post_add_admin_post_add_component__WEBPACK_IMPORTED_MODULE_12__["AdminPostAddComponent"]
+                    },
+                    {
+                        path: "listpost", component: _admin_component_admin_post_list_admin_post_list_component__WEBPACK_IMPORTED_MODULE_13__["AdminPostListComponent"]
+                    }
+                ]
             }
         ]
     }
@@ -879,6 +1076,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _admin_page_adminpost_adminpost_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./admin/page/adminpost/adminpost.component */ "./src/app/admin/page/adminpost/adminpost.component.ts");
 /* harmony import */ var _admin_component_admin_category_list_admin_category_list_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./admin/component/admin-category-list/admin-category-list.component */ "./src/app/admin/component/admin-category-list/admin-category-list.component.ts");
 /* harmony import */ var _admin_component_admin_category_add_admin_category_add_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./admin/component/admin-category-add/admin-category-add.component */ "./src/app/admin/component/admin-category-add/admin-category-add.component.ts");
+/* harmony import */ var _admin_component_admin_post_add_admin_post_add_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./admin/component/admin-post-add/admin-post-add.component */ "./src/app/admin/component/admin-post-add/admin-post-add.component.ts");
+/* harmony import */ var _admin_component_admin_post_list_admin_post_list_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./admin/component/admin-post-list/admin-post-list.component */ "./src/app/admin/component/admin-post-list/admin-post-list.component.ts");
+
+
 
 
 
@@ -917,7 +1118,9 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _admin_page_admincategory_admincategory_component__WEBPACK_IMPORTED_MODULE_16__["AdminCategoryComponent"],
             _admin_page_adminpost_adminpost_component__WEBPACK_IMPORTED_MODULE_17__["AdminPostComponent"],
             _admin_component_admin_category_list_admin_category_list_component__WEBPACK_IMPORTED_MODULE_18__["AdminCategoryListComponent"],
-            _admin_component_admin_category_add_admin_category_add_component__WEBPACK_IMPORTED_MODULE_19__["AdminCategoryAddComponent"]
+            _admin_component_admin_category_add_admin_category_add_component__WEBPACK_IMPORTED_MODULE_19__["AdminCategoryAddComponent"],
+            _admin_component_admin_post_add_admin_post_add_component__WEBPACK_IMPORTED_MODULE_20__["AdminPostAddComponent"],
+            _admin_component_admin_post_list_admin_post_list_component__WEBPACK_IMPORTED_MODULE_21__["AdminPostListComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -952,10 +1155,10 @@ class Category {
 
 /***/ }),
 
-/***/ "./src/app/service/category-service.service.ts":
-/*!*****************************************************!*\
-  !*** ./src/app/service/category-service.service.ts ***!
-  \*****************************************************/
+/***/ "./src/app/services/category-service.service.ts":
+/*!******************************************************!*\
+  !*** ./src/app/services/category-service.service.ts ***!
+  \******************************************************/
 /*! exports provided: CategoryService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -975,19 +1178,20 @@ let CategoryService = class CategoryService {
         this.http = http;
     }
     getAllCategories() {
-        let resultt = this.http.get(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].baseUrl + 'category');
-        console.log(resultt);
-        return resultt;
+        let result = this.http.get(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].baseUrl + 'category');
+        return result;
     }
     saveCategory(category) {
-        let postData = new FormData();
-        postData.append('name', category.name);
-        let result = this.http.post(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].baseUrl + 'category', postData);
-        return result.subscribe(data => {
-            console.log(data);
-        }, err => {
-            //console.log("Error: " + err)
-        });
+        let headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]();
+        headers = headers.set('Content-Type', 'application/json; charset=utf-8');
+        let result = this.http.post(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].baseUrl + 'category', JSON.stringify(category), { headers });
+        return result;
+    }
+    deleteCategory(id) {
+        return this.http.delete(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].baseUrl + 'category/' + id, {});
+    }
+    getCategoryById(id) {
+        return this.http.get(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].baseUrl + 'category/' + id, {});
     }
 };
 CategoryService.ctorParameters = () => [
@@ -998,6 +1202,58 @@ CategoryService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         providedIn: 'root'
     })
 ], CategoryService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/post-service.service.ts":
+/*!**************************************************!*\
+  !*** ./src/app/services/post-service.service.ts ***!
+  \**************************************************/
+/*! exports provided: PostService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostService", function() { return PostService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../environments/environment */ "./src/environments/environment.ts");
+
+
+
+
+let PostService = class PostService {
+    constructor(http) {
+        this.http = http;
+    }
+    getAllPosts() {
+        let result = this.http.get(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].baseUrl + 'post');
+        return result;
+    }
+    savePost(post) {
+        let headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]();
+        headers = headers.set('Content-Type', 'application/json; charset=utf-8');
+        let result = this.http.post(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].baseUrl + 'post', JSON.stringify(post), { headers });
+        return result;
+    }
+    deletePost(id) {
+        return this.http.delete(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].baseUrl + 'post/' + id, {});
+    }
+    getPostById(id) {
+        return this.http.get(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].baseUrl + 'post/' + id, {});
+    }
+};
+PostService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+PostService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], PostService);
 
 
 
@@ -1028,7 +1284,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CagetorylistComponent", function() { return CagetorylistComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _service_category_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../service/category-service.service */ "./src/app/service/category-service.service.ts");
+/* harmony import */ var _services_category_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../services/category-service.service */ "./src/app/services/category-service.service.ts");
 
 
 
@@ -1040,13 +1296,13 @@ let CagetorylistComponent = class CagetorylistComponent {
         this.getAllCategory();
     }
     getAllCategory() {
-        this.categories = this.categoryService.getAllCategories().subscribe(res => {
+        this.categoryService.getAllCategories().subscribe(res => {
             this.categories = res;
         });
     }
 };
 CagetorylistComponent.ctorParameters = () => [
-    { type: _service_category_service_service__WEBPACK_IMPORTED_MODULE_2__["CategoryService"] }
+    { type: _services_category_service_service__WEBPACK_IMPORTED_MODULE_2__["CategoryService"] }
 ];
 CagetorylistComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

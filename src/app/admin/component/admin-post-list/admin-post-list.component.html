@@ -1,1 +1,27 @@
-<p>admin-post-list works!</p>
+
+<div class="row m-1">
+    <p>Post List</p>
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Create</th>
+            <th scope="col">Statu</th>
+            <th scope="col" class="">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let post of allPosts | async">
+            <td scope="row">{{post.id}}</td>
+            <td>{{post.title}}</td>
+            <td>{{post.createDate | date: 'dd/MM/yyyy hh:mm'}}</td>
+            <td>{{post.isActive}}</td>
+            <td class="t">
+                <button (click)="deletePost(post.id)" class="btn btn-danger">Delete</button>
+                <button (click)="updatePost(post.id)" class="btn btn-info" style="margin-left: 5x">Update</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>

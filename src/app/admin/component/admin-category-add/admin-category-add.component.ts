@@ -11,9 +11,10 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class AdminCategoryAddComponent implements OnInit {
 
-  Category: Category = new Category();
-  Name;
-  IsActive;
+  //Fiels
+  category: Category = new Category();
+  name: string = "";
+  isActive:boolean = false;
 
   constructor(private router: Router, private categoryService: CategoryService) {
   }
@@ -22,10 +23,10 @@ export class AdminCategoryAddComponent implements OnInit {
   }
 
   btnCategorySave_click(): void {
-    this.Category.name = this.Name;
-    this.Category.isActive = this.IsActive;
+    this.category.name = this.name;
+    this.category.isActive = this.isActive;
 
-    this.categoryService.saveCategory(this.Category).subscribe(data => {
+    this.categoryService.saveCategory(this.category).subscribe(data => {
       console.log("Resp:" + data);
     }, err => {
       console.log("Error:" + err);
