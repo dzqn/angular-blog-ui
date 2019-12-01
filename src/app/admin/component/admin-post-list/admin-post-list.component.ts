@@ -23,12 +23,16 @@ export class AdminPostListComponent implements OnInit {
     this.allPosts = this.postService.getAllPosts();
   }
 
-  deletePost() {
-
+  deletePost(id) {
+    let result = this.postService.deletePost(id);
+    result.subscribe(data => {
+      console.log("Resp:" + data);
+      this.getAllPosts();
+    }, err => {
+      console.log("Err:" + err);
+    });
   }
 
   updatePost() {
-
   }
-
 }

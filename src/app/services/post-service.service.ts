@@ -25,7 +25,9 @@ export class PostService {
   }
 
   deletePost(id: number): Observable<any> {
-    return this.http.delete(environment.baseUrl + 'post/' + id, {})
+    let result = this.http.delete(environment.baseUrl + 'post/' + id, {})
+    console.log(result);
+    return result;
   }
 
   getPostById(id:number):Observable<any>{
